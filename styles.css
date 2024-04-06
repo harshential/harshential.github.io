@@ -44,6 +44,13 @@ body {
 }
 
 
+img[src$=".ico"] {
+    width: 100px; /* Adjust as needed */
+    height: auto;
+    display: block; /* or inline-block, depending on your layout */
+    margin: 0 auto; /* Center the image if desired */
+}
+
 
 h1, h2 {
     color: #333;
@@ -52,6 +59,8 @@ h1, h2 {
 p {
     margin: 10px 0;
 }
+
+
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
