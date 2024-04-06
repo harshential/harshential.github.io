@@ -1,40 +1,65 @@
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
+/* Basic Reset */
+* {
     margin: 0;
-}
-
-.sidebar {
-    width: 200px;
-    background: #333;
-    color: #fff;
-    height: 100vh;
-    overflow: auto;
-}
-
-.sidebar ul {
     padding: 0;
-    list-style: none;
+    box-sizing: border-box;
 }
 
-.sidebar ul li a {
-    color: #fff;
-    text-decoration: none;
-    display: block;
-    padding: 10px;
-}
-
-.content {
-    flex-grow: 1;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
     padding: 20px;
+    background-color: #f4f4f4;
 }
 
-header, footer {
-    background: #f1f1f1;
-    padding: 10px;
+/* Grid Layout Styles */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-template-rows: repeat(2, 1fr); /* Two rows */
+    gap: 20px;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.grid-item {
+    background: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    padding: 20px;
+    text-decoration: none; /* Removes underline from links */
+    color: inherit; /* Inherits text color from parent, instead of default blue */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease;
 }
 
-main {
-    margin-top: 20px;
+.grid-item:hover {
+    background-color: #eaeaea;
+}
+
+
+
+h1, h2 {
+    color: #333;
+}
+
+p {
+    margin: 10px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Stack items vertically on smaller screens */
+        height: auto;
+    }
+    .grid-item {
+        margin-bottom: 20px;
+    }
 }
