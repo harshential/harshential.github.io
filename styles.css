@@ -21,6 +21,8 @@ body {
     gap: 20px;
     height: 100vh;
     padding: 20px;
+    position: relative; /* Allows for absolute positioning of children */
+    /*place-items: center; /* Center items both horizontally and vertically */
     box-sizing: border-box;
 }
 
@@ -42,13 +44,14 @@ body {
 .grid-item:hover {
     background-color: #eaeaea;
 }
-
-
-img[src$=".ico"] {
-    width: 100px; /* Adjust as needed */
-    height: auto;
-    display: block; /* or inline-block, depending on your layout */
-    margin: 0 auto; /* Center the image if desired */
+.grid-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the logo exactly */
+    width: 100px; /* Adjust based on your logo's size */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 10; /* Ensures the logo is above the grid items */
 }
 
 
