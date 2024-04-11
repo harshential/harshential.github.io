@@ -1,11 +1,18 @@
 /* Basic Reset */
 * {
-    margin: 0;
+    width: 80%;
+    margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* This uses the full height of the viewport */
+    margin: 0;
+    box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
     line-height: 1.6;
@@ -67,7 +74,7 @@ p {
 
 
 /* Responsive adjustments */
-@media (max-width: 600px) {
+@media (max-width: 599px) {
     .sidebar {
         display: none; /* Hide sidebar on smaller screens */
     }
