@@ -43,7 +43,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-   /* padding: 20px;*/
+    padding: 20px;
     text-decoration: none; /* Removes underline from links */
     color: inherit; /* Inherits text color from parent, instead of default blue */
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -78,6 +78,9 @@ p {
     .sidebar {
         display: none; /* Hide sidebar on smaller screens */
     }
+    body {
+        padding: 10px; /* Reduces padding on very small screens */
+    }
     .main-content {
         width: 100%; /* Allow content to take full width */
     }
@@ -89,6 +92,6 @@ p {
         margin-bottom: 20px;
     }
     .grid-logo {
-        width: 80px; /* Smaller logo on smaller screens */
+        width: 60px; /* Smaller logo on smaller screens */
     }
 }
