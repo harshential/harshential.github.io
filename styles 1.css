@@ -7,7 +7,7 @@ body {
 .sidebar {
     width: 200px;
     background: #333;
-    color: #fff;
+    color: #09475A;
     height: 100vh;
     overflow: auto;
 }
@@ -18,7 +18,7 @@ body {
 }
 
 .sidebar ul li a {
-    color: #09475A;
+    color: #fff;
     text-decoration: none;
     display: block;
     padding: 10px;
