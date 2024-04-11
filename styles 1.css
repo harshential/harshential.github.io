@@ -18,7 +18,7 @@ body {
 }
 
 .sidebar ul li a {
-    color: #fff;
+    color: #09475A;
     text-decoration: none;
     display: block;
     padding: 10px;
@@ -30,7 +30,7 @@ body {
 }
 
 header, footer {
-    background: #f1f1f1;
+    background: #B0D2DD;
     padding: 10px;
     text-align: center;
 }
