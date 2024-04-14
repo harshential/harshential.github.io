@@ -23,18 +23,44 @@ body {
     display: block;
     padding: 10px;
 }
-
-.content {
-    flex-grow: 1;
-    padding: 20px;
-}
-
 header, footer {
     background: #B0D2DD;
     padding: 10px;
     text-align: center;
 }
-
 main {
     margin-top: 20px;
 }
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+}
+
+thead th {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    padding: 12px 15px;
+}
+
+tbody td {
+    border-bottom: 1px solid #dddddd;
+    padding: 12px 15px;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+
