@@ -84,5 +84,8 @@ tbody tr:last-of-type {
 
     .sidebar img {
         max-width: 100%; /* Ensure images resize properly */
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Ensure images are not inline */
     }
 }
+
