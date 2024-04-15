@@ -11,6 +11,7 @@ body {
     background-color: #f4f4f4;
     padding: 10px;
     box-sizing: border-box;
+    overflow-y: auto; /* Enables scrolling */
 }
 
 .sidebar img {
@@ -33,14 +34,17 @@ header, footer {
     padding: 10px;
     text-align: center;
 }
+
 main {
     margin-top: 20px;
+    padding-left: 270px; /* Add padding to ensure content is not hidden behind the sidebar */
 }
 
 .content {
     flex-grow: 1;
     padding: 20px;
 }
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -68,4 +72,17 @@ tbody tr:last-of-type {
     border-bottom: 2px solid #009879;
 }
 
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .sidebar {
+        width: 180px; /* Smaller sidebar for smaller screens */
+    }
 
+    main {
+        padding-left: 200px; /* Adjust padding to match the new sidebar width */
+    }
+
+    .sidebar img {
+        max-width: 100%; /* Ensure images resize properly */
+    }
+}
