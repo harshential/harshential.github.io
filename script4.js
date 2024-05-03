@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Setup an object containing info related to each individual
     const infoMap = {
-        'Brittany.jpeg': 'Harsh Prasad: Detail about Harsh Prasad here...',
-        'pembroke-welsh-corgi.jpg': 'Person 2: Detail about Person 2 here...',
-        'welsh-springer-spaniel.jpg': 'Person 3: Detail about Person 3 here...',
-        'Yorkshire%20terrier.jpeg': 'Person 4: Detail about Person 4 here...'
+        'Brittany.jpeg': 'Harsh Prasad',
+        'pembroke-welsh-corgi.jpg': 'Person 2',
+        'welsh-springer-spaniel.jpg': 'Person 3',
+        'Yorkshire%20terrier.jpeg': 'Person 4'
     };
 
     // Select all images within the sidebar
