@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'images/Brittany.jpeg': 'Harsh Prasad - Your profile details here',
         'images/pembroke-welsh-corgi.jpg': 'Person 2 - More details about this person',
         'images/welsh-springer-spaniel.jpg': 'Person 3 - Additional information here',
-        'images/Yorkshire%20terrier.jpeg': 'Person 4 - Some more details here'
+        'images/Yorkshire-terrier.jpeg': 'Person 4 - Some more details here'
     };
 
     // Select all images within the sidebar
