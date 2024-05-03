@@ -1,25 +1,27 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Setup an object containing info related to each individual
     const infoMap = {
-        'Brittany.jpeg': 'Harsh Prasad',
-        'pembroke-welsh-corgi.jpg': 'Person 2',
-        'welsh-springer-spaniel.jpg': 'Person 3',
-        'Yorkshire%20terrier.jpeg': 'Person 4'
+        'images/Brittany.jpeg': 'Harsh Prasad - Your profile details here',
+        'images/pembroke-welsh-corgi.jpg': 'Person 2 - More details about this person',
+        'images/welsh-springer-spaniel.jpg': 'Person 3 - Additional information here',
+        'images/Yorkshire%20terrier.jpeg': 'Person 4 - Some more details here'
     };
 
     // Select all images within the sidebar
     const images = document.querySelectorAll('.sidebar img');
     images.forEach(img => {
         img.addEventListener('click', function() {
-            // Retrieve info based on the image src attribute
-            const info = infoMap[img.getAttribute('src')] || 'No information available.';
+            // Decode the src to match keys in the infoMap
+            const src = decodeURIComponent(img.getAttribute('src'));
+            // Retrieve info based on the decoded image src attribute
+            const info = infoMap[src] || 'No information available.';
             displayInfo(info);
         });
     });
 
     // Function to display information
     function displayInfo(info) {
-        // If the info display div doesn't exist, create it
+        // Access or create the info display div
         let infoDisplay = document.getElementById('infoDisplay');
         if (!infoDisplay) {
             infoDisplay = document.createElement('div');
